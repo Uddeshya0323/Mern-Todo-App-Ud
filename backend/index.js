@@ -1,11 +1,12 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
-require("./Models/db");
+const connectDB = require("./Models/db");
 const PORT = process.env.PORT || 8080;
 const TaskRouter = require("./Routes/TaskRouter");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+connectDB();
 
 app.get("/", (req, res) => {
   res.send("Hello from the server");
