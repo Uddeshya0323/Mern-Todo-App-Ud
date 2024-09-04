@@ -3,7 +3,7 @@ const app = express();
 require("dotenv").config();
 const connectDB = require("./models/db");
 const PORT = process.env.PORT || 8080;
-const TaskRouter = require("./Routes/TaskRouter");
+const TaskRouter = require("./routes/TaskRouter");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 connectDB();

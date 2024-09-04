@@ -3,7 +3,7 @@ const {
   fetchAllTasks,
   updateTaskById,
   deleteTaskById,
-} = require("../Controllers/TaskController");
+} = require("../controllers/TaskController");
 
 const router = require("express").Router();
 
